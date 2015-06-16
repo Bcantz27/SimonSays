@@ -29,34 +29,7 @@
 
         <div class="highscores" style="font-size: 32px;">
             <?php
-            $servername = "localhost";
-            $username = "admin";
-            $password = "22penn27";
-            $database = "simonsays";
-            $players = array();
-            $scores = array();
-
-            $db_handle = mysql_connect($servername, $username, $password);
-            $db_found = mysql_select_db($database, $db_handle);
-            if ($db_found) {
-
-                $SQL = "SELECT name, score FROM users ORDER BY score DESC";
-                $result = mysql_query($SQL);
-
-                while(($row =  mysql_fetch_assoc($result))) {
-                    $players[] = $row['name'];
-                    $scores[] = $row['score'];
-                }
-
-                mysql_close($db_handle);
-
-            }
-            else {
-
-                mysql_close($db_handle);
-
-            }
-
+                include "scripts/getscores.php";
             ?>
             <div class="row">
                 <div class="col-6-lg">
