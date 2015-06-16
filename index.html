@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+    <title>Simon Says!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/grid12.css" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <nav>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-4">
+                    <ul>
+                        <li>
+                            <a class="active" href="./index.html">Play</a>
+                        </li>
+                        <li>
+                            <a href="./highscores.php">Highscores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="box">
+            <div class="qtr g" data-which="1" data-tone="450"></div>
+            <div class="qtr r" data-which="2" data-tone="333"></div>
+            <div class="qtr y" data-which="3" data-tone="250"></div>
+            <div class="qtr b" data-which="4" data-tone="200"></div>
+
+            <div class="output">
+                <div class="welcome">
+                    <div>are</div>
+                    <div>you</div>
+                    <div>ready?</div>
+                </div>
+                <div class="score"></div>
+                <div class="replay">
+                    <ul class="ripple">
+                        <li>a</li>
+                        <li>g</li>
+                        <li>a</li>
+                        <li>i</li>
+                        <li>n</li>
+                        <li>?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="highscore">
+            <h2>Submit Your Score!</h2>
+            <p class="pad-lips-light">Enter your Name:</p>
+            <input placeholder="Name" type="text" class="initials" maxlength="16" matches="\d{3}\" />
+            <ul class="ripple no-thanks">
+                <li>N</li>
+                <li>O</li>
+                <li>&nbsp;</li>
+                <li>T</li>
+                <li>H</li>
+                <li>X</li>
+            </ul>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/myJs.js"></script>
+    </body>
+
+</html>
